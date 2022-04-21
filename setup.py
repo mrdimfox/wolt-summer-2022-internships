@@ -21,7 +21,7 @@ setup(
         ],
         "tests": ["pytest", "httpx", "pytest_asyncio"],
     },
-    package_data={"fee_calculator_api": [""]},
+    package_data={"fee_calculator_api": ["logger.json"]},
     project_urls={
         "Source": "https://github.com/mrdimfox/wolt-summer-2022-internships",
     },
