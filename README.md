@@ -2,6 +2,15 @@
 
 Fee calculator for Wolt Summer 2022 Engineering Internships
 
+## Run
+
+To start the API server in a development mode install the package and run it as
+a module:
+
+```bash
+pip install git+https://github.com/mrdimfox/wolt-summer-2022-internships.git
+python -m fee_calculator_api
+```
 
 ## Endpoints
 
