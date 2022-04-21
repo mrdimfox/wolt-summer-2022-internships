@@ -14,12 +14,12 @@ api = FastAPI(
 
 
 @api.post("/delivery_fee", response_model=DeliveryFee)
-async def delivery_fee(parchase: Purchase):
+async def delivery_fee(purchase: Purchase):
     fee = calculate_fee(
-        cart_value=parchase.cart_value,
-        delivery_distance=parchase.delivery_distance,
-        number_of_items=parchase.number_of_items,
-        date=parchase.time,
+        cart_value=purchase.cart_value,
+        delivery_distance=purchase.delivery_distance,
+        number_of_items=purchase.number_of_items,
+        date=purchase.time,
     )
 
     return DeliveryFee(delivery_fee=fee)
