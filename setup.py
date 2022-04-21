@@ -12,20 +12,16 @@ setup(
     packages=find_packages(where="src"),
     python_requires=">=3.10, <4",
     classifiers=[],
-    install_requires=[],
+    install_requires=["fastapi", "pydantic"],
     extras_require={
         "dev": [
             "wemake-python-styleguide",
             "mypy",
             "black",
         ],
-        "tests": [
-            "pytest",
-        ],
+        "tests": ["pytest", "httpx", "pytest_asyncio"],
     },
-    package_data={
-        "fee_calculator_api": [""]
-    },
+    package_data={"fee_calculator_api": [""]},
     project_urls={
         "Source": "https://github.com/mrdimfox/wolt-summer-2022-internships",
     },

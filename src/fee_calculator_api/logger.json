@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "default": {
+            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+        }
+    },
+    "handlers": {
+        "stdout": {
+            "level": "INFO",
+            "formatter": "default",
+            "class": "logging.StreamHandler",
+            "stream": "ext://sys.stdout"
+        }
+    },
+    "loggers": {
+        "fee_calculator_api": {
+            "handlers": [
+                "stdout"
+            ],
+            "level": "DEBUG",
+            "propagate": true
+        }
+    }
+}

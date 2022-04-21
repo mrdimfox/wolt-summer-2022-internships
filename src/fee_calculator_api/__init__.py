@@ -1,4 +1,3 @@
-"""Package as library entry point"""
+from fee_calculator_api.api import api
 
-def lib_fun() -> int:
-    return 0
+__all__ = ["api"]

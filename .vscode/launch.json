@@ -13,11 +13,11 @@
             "args": []
         },
         {
-            "name": "Python: Текущий файл",
+            "name": "Tests",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+            "purpose": ["debug-test"],
+            "justMyCode": false
         }
     ]
 }
